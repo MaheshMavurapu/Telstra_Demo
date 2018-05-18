@@ -86,19 +86,22 @@
 
 // Set Image by downloading from server. 
 -(void)setImageFromURL:(NSURL*)imageURL {
-    ItemListViewModel *itemListViewModel = [[ItemListViewModel alloc]init];
-    itemListViewModel.imageDelegate = self;
-    [itemListViewModel downloadImageWithUrl:imageURL]; // Downloading of Image with Url.
+    [self getDownloadedImageFromServer:imageURL]; // Downloading of Image with Url.
 }
 
-// Delegate of Image Receiver
--(void)downloadedImage:(UIImage*)image {
-    typeof(self) weakSelf = self;
-    // validate for refresh imageview
-    if (weakSelf.itemImageView) {
-        weakSelf.itemImageView.image = image;
-    }
+// Downloading of Image
+-(void)getDownloadedImageFromServer:(NSURL *)url {
+    NetworkManager *networkmanager = [NetworkManager sharedInstance];
+    [networkmanager downloadImageFromServerWithUrl:url andCompletionHandler:^(NSError *error, id response, NSHTTPURLResponse *httpResponse) {
+        UIImage *image = [[UIImage alloc] initWithData:response];
+        typeof(self) weakSelf = self;
+        // validate for refresh imageview
+        if (weakSelf.itemImageView) {
+            weakSelf.itemImageView.image = image;
+        }
+    }];
 }
+//
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

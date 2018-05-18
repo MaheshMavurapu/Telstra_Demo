@@ -80,12 +80,6 @@ NSString *cellIdentifier = @"ItemTableViewCell"; // Cell Identifier
     [itemListAPICall getDetailsFromServer:List_Url]; // API Call
 }
 
-// Download Image From server with Image Url
--(void)downloadImageWithUrl:(NSURL *)imageUrl {
-    // Url String
-    [itemListAPICall getDownloadedImageFromServer:imageUrl]; // API Call
-}
-
 // Response - API Call - Delegate Methods
 -(void)listOfResultsFromServer:(NSDictionary *)detailsList
                          error:(NSError *)error
@@ -102,13 +96,6 @@ NSString *cellIdentifier = @"ItemTableViewCell"; // Cell Identifier
         [GlobalWidget alertMessage:@"Something went wrong. Please try again" title:@"Error" andCompletionHandler:^(UIAlertAction *action) {
         }];
     }
-}
-
--(void)imageFromServer:(NSData *)imageData
-                 error:(NSError *)error
-          responseCode:(NSInteger)code {
-    UIImage *image = [[UIImage alloc] initWithData:imageData];
-    [self.imageDelegate downloadedImage:image]; // Sending Downloaded Image to update UI.
 }
 //
 

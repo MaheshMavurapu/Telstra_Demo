@@ -13,15 +13,11 @@
 -(void)listOfResultsFromServer:(NSDictionary *)detailsList
                         error:(NSError *)error
                  responseCode:(NSInteger)code;
--(void)imageFromServer:(NSData *)imageData
-                               error:(NSError *)error
-                        responseCode:(NSInteger)code;
 @end
 
 @interface ItemListAPICall : NSObject
 
 @property (weak, nonatomic) id<ListProtocol> listDelegate;
 -(void)getDetailsFromServer:(NSString *)url;
--(void)getDownloadedImageFromServer:(NSURL *)url;
 
 @end

@@ -10,7 +10,7 @@
 #import "ItemListModel.h"
 #import "ItemListViewModel.h"
 
-@interface ListTableViewCell : UITableViewCell <ImageProtocol>
+@interface ListTableViewCell : UITableViewCell
 
 @property(nonatomic, strong) UIImageView *itemImageView;
 @property(nonatomic, strong) UILabel *titleLabel;

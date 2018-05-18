@@ -19,12 +19,4 @@
     }];
 }
 
-// Downloading of Image
--(void)getDownloadedImageFromServer:(NSURL *)url {
-    NetworkManager *networkmanager = [NetworkManager sharedInstance];
-    [networkmanager downloadImageFromServerWithUrl:url andCompletionHandler:^(NSError *error, id response, NSHTTPURLResponse *httpResponse) {
-        [self.listDelegate imageFromServer:response error:error responseCode:[httpResponse statusCode]];
-    }];
-}
-
 @end
