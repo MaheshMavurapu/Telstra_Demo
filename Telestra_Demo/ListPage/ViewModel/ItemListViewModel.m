@@ -10,6 +10,7 @@
 #import "ListTableViewCell.h"
 #import "GlobalWidget.h"
 #import "ItemListModel.h"
+#import "APIList.h"
 
 @implementation ItemListViewModel
 
@@ -76,8 +77,7 @@ NSString *cellIdentifier = @"ItemTableViewCell"; // Cell Identifier
 // Get All Item Details
 -(void)fetchDetails {
     // Url String
-    NSString *itemsListUrl = @"https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json";
-    [itemListAPICall getDetailsFromServer:itemsListUrl]; // API Call
+    [itemListAPICall getDetailsFromServer:List_Url]; // API Call
 }
 
 // Download Image From server with Image Url

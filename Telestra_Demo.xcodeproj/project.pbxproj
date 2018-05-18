@@ -45,6 +45,7 @@
 		4352729920AD8A0300E3257D /* GlobalWidget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalWidget.m; sourceTree = "<group>"; };
 		4352729F20AD91E300E3257D /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		435272A020AD91E300E3257D /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		435E325620AE980D0047C2EF /* APIList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		4352725F20AD57B400E3257D /* Telestra_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				435E325520AE97DE0047C2EF /* APIList */,
 				4352729320AD648E00E3257D /* NetworkManager */,
 				4352729720AD89DD00E3257D /* Utils */,
 				4352728520AD629600E3257D /* ListPage */,
@@ -165,6 +167,14 @@
 				435272A020AD91E300E3257D /* ListTableViewCell.m */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		435E325520AE97DE0047C2EF /* APIList */ = {
+			isa = PBXGroup;
+			children = (
+				435E325620AE980D0047C2EF /* APIList.h */,
+			);
+			path = APIList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
