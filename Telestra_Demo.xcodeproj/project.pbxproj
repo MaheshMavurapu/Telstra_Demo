@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4352726220AD57B400E3257D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352726120AD57B400E3257D /* AppDelegate.m */; };
+		4352726A20AD57B400E3257D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4352726920AD57B400E3257D /* Assets.xcassets */; };
+		4352726D20AD57B400E3257D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4352726B20AD57B400E3257D /* LaunchScreen.storyboard */; };
+		4352727020AD57B400E3257D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352726F20AD57B400E3257D /* main.m */; };
+		4352728220AD628200E3257D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352727E20AD628200E3257D /* BaseViewController.m */; };
+		4352728320AD628200E3257D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352728120AD628200E3257D /* ListViewController.m */; };
+		4352728C20AD630900E3257D /* ItemListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352728B20AD630900E3257D /* ItemListModel.m */; };
+		4352728F20AD631800E3257D /* ItemListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352728E20AD631800E3257D /* ItemListViewModel.m */; };
+		4352729220AD633600E3257D /* ItemListAPICall.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352729120AD633600E3257D /* ItemListAPICall.m */; };
+		4352729620AD64A500E3257D /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352729520AD64A500E3257D /* NetworkManager.m */; };
+		4352729A20AD8A0300E3257D /* GlobalWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352729920AD8A0300E3257D /* GlobalWidget.m */; };
+		435272A120AD91E300E3257D /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 435272A020AD91E300E3257D /* ListTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4352725D20AD57B400E3257D /* Telestra_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telestra_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4352726020AD57B400E3257D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4352726120AD57B400E3257D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4352726920AD57B400E3257D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4352726C20AD57B400E3257D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4352726E20AD57B400E3257D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4352726F20AD57B400E3257D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4352727E20AD628200E3257D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4352727F20AD628200E3257D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		4352728020AD628200E3257D /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		4352728120AD628200E3257D /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		4352728A20AD630900E3257D /* ItemListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemListModel.h; sourceTree = "<group>"; };
+		4352728B20AD630900E3257D /* ItemListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemListModel.m; sourceTree = "<group>"; };
+		4352728D20AD631800E3257D /* ItemListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemListViewModel.h; sourceTree = "<group>"; };
+		4352728E20AD631800E3257D /* ItemListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemListViewModel.m; sourceTree = "<group>"; };
+		4352729020AD633600E3257D /* ItemListAPICall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemListAPICall.h; sourceTree = "<group>"; };
+		4352729120AD633600E3257D /* ItemListAPICall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemListAPICall.m; sourceTree = "<group>"; };
+		4352729420AD64A500E3257D /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		4352729520AD64A500E3257D /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		4352729820AD8A0300E3257D /* GlobalWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalWidget.h; sourceTree = "<group>"; };
+		4352729920AD8A0300E3257D /* GlobalWidget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalWidget.m; sourceTree = "<group>"; };
+		4352729F20AD91E300E3257D /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		435272A020AD91E300E3257D /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4352725A20AD57B400E3257D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4352725420AD57B400E3257D = {
+			isa = PBXGroup;
+			children = (
+				4352725F20AD57B400E3257D /* Telestra_Demo */,
+				4352725E20AD57B400E3257D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4352725E20AD57B400E3257D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4352725D20AD57B400E3257D /* Telestra_Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4352725F20AD57B400E3257D /* Telestra_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4352729320AD648E00E3257D /* NetworkManager */,
+				4352729720AD89DD00E3257D /* Utils */,
+				4352728520AD629600E3257D /* ListPage */,
+				4352726020AD57B400E3257D /* AppDelegate.h */,
+				4352726120AD57B400E3257D /* AppDelegate.m */,
+				4352726920AD57B400E3257D /* Assets.xcassets */,
+				4352726B20AD57B400E3257D /* LaunchScreen.storyboard */,
+				4352726E20AD57B400E3257D /* Info.plist */,
+				4352726F20AD57B400E3257D /* main.m */,
+			);
+			path = Telestra_Demo;
+			sourceTree = "<group>";
+		};
+		4352728520AD629600E3257D /* ListPage */ = {
+			isa = PBXGroup;
+			children = (
+				4352728920AD62BA00E3257D /* ViewModel */,
+				4352728820AD62B200E3257D /* Model */,
+				4352728720AD62AC00E3257D /* View */,
+				4352728620AD62A300E3257D /* APICall */,
+			);
+			path = ListPage;
+			sourceTree = "<group>";
+		};
+		4352728620AD62A300E3257D /* APICall */ = {
+			isa = PBXGroup;
+			children = (
+				4352729020AD633600E3257D /* ItemListAPICall.h */,
+				4352729120AD633600E3257D /* ItemListAPICall.m */,
+			);
+			path = APICall;
+			sourceTree = "<group>";
+		};
+		4352728720AD62AC00E3257D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4352729E20AD91B900E3257D /* TableViewCell */,
+				4352727F20AD628200E3257D /* BaseViewController.h */,
+				4352727E20AD628200E3257D /* BaseViewController.m */,
+				4352728020AD628200E3257D /* ListViewController.h */,
+				4352728120AD628200E3257D /* ListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4352728820AD62B200E3257D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4352728A20AD630900E3257D /* ItemListModel.h */,
+				4352728B20AD630900E3257D /* ItemListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4352728920AD62BA00E3257D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4352728D20AD631800E3257D /* ItemListViewModel.h */,
+				4352728E20AD631800E3257D /* ItemListViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4352729320AD648E00E3257D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				4352729420AD64A500E3257D /* NetworkManager.h */,
+				4352729520AD64A500E3257D /* NetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		4352729720AD89DD00E3257D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4352729820AD8A0300E3257D /* GlobalWidget.h */,
+				4352729920AD8A0300E3257D /* GlobalWidget.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4352729E20AD91B900E3257D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4352729F20AD91E300E3257D /* ListTableViewCell.h */,
+				435272A020AD91E300E3257D /* ListTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4352725C20AD57B400E3257D /* Telestra_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4352727320AD57B400E3257D /* Build configuration list for PBXNativeTarget "Telestra_Demo" */;
+			buildPhases = (
+				4352725920AD57B400E3257D /* Sources */,
+				4352725A20AD57B400E3257D /* Frameworks */,
+				4352725B20AD57B400E3257D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Telestra_Demo;
+			productName = Telestra_Demo;
+			productReference = 4352725D20AD57B400E3257D /* Telestra_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4352725520AD57B400E3257D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Mahesh Mavurapu";
+				TargetAttributes = {
+					4352725C20AD57B400E3257D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4352725820AD57B400E3257D /* Build configuration list for PBXProject "Telestra_Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4352725420AD57B400E3257D;
+			productRefGroup = 4352725E20AD57B400E3257D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4352725C20AD57B400E3257D /* Telestra_Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4352725B20AD57B400E3257D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4352726D20AD57B400E3257D /* LaunchScreen.storyboard in Resources */,
+				4352726A20AD57B400E3257D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4352725920AD57B400E3257D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4352729620AD64A500E3257D /* NetworkManager.m in Sources */,
+				4352727020AD57B400E3257D /* main.m in Sources */,
+				4352728F20AD631800E3257D /* ItemListViewModel.m in Sources */,
+				4352728C20AD630900E3257D /* ItemListModel.m in Sources */,
+				4352729A20AD8A0300E3257D /* GlobalWidget.m in Sources */,
+				4352728220AD628200E3257D /* BaseViewController.m in Sources */,
+				4352729220AD633600E3257D /* ItemListAPICall.m in Sources */,
+				4352728320AD628200E3257D /* ListViewController.m in Sources */,
+				4352726220AD57B400E3257D /* AppDelegate.m in Sources */,
+				435272A120AD91E300E3257D /* ListTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4352726B20AD57B400E3257D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4352726C20AD57B400E3257D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4352727120AD57B400E3257D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4352727220AD57B400E3257D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4352727420AD57B400E3257D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Telestra_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wipropoc.Telestra-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4352727520AD57B400E3257D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Telestra_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wipropoc.Telestra-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4352725820AD57B400E3257D /* Build configuration list for PBXProject "Telestra_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4352727120AD57B400E3257D /* Debug */,
+				4352727220AD57B400E3257D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4352727320AD57B400E3257D /* Build configuration list for PBXNativeTarget "Telestra_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4352727420AD57B400E3257D /* Debug */,
+				4352727520AD57B400E3257D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4352725520AD57B400E3257D /* Project object */;
+}
